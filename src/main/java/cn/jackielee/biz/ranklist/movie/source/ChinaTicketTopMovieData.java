@@ -8,8 +8,8 @@ import java.util.List;
 /**
  * Created by lxb on 2019/1/8.
  */
-public class ChinaTicketRankSource {
-    public static final String chinaTicketRankStr = "[\n" +
+public class ChinaTicketTopMovieData {
+    public static final String chinaTicketTopMovieDataStr = "[\n" +
             "    {\n" +
             "        \"MovieID\": \"641515\",\n" +
             "        \"title\": \"战狼2\",\n" +
@@ -19,8 +19,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"4158816\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"15943\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-07-27\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-07-27\",\n" +
             "        \"AvgPeople\": \"38\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/229733.jpg\"\n" +
             "    },\n" +
@@ -33,8 +33,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2815494\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"9291\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2018-02-16\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2018-02-16\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/240425.jpg\"\n" +
             "    },\n" +
@@ -47,8 +47,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2275136\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"8766\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2018-02-16\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2018-02-16\",\n" +
             "        \"AvgPeople\": \"39\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/234873.jpg\"\n" +
             "    },\n" +
@@ -61,8 +61,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2120077\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"9243\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2016-02-08\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2016-02-08\",\n" +
             "        \"AvgPeople\": \"44\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209007.jpg\"\n" +
             "    },\n" +
@@ -75,8 +75,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"3354213\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"8895\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2018-07-05\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2018-07-05\",\n" +
             "        \"AvgPeople\": \"27\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/242167.jpg\"\n" +
             "    },\n" +
@@ -89,8 +89,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2424825\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"7287\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2017-04-14\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2017-04-14\",\n" +
             "        \"AvgPeople\": \"30\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/224149.jpg\"\n" +
             "    },\n" +
@@ -103,8 +103,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2590731\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"7264\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2018-07-27\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2018-07-27\",\n" +
             "        \"AvgPeople\": \"28\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/253688.jpg\"\n" +
             "    },\n" +
@@ -117,8 +117,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1576146\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"6563\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2015-07-16\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2015-07-16\",\n" +
             "        \"AvgPeople\": \"42\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/211794.jpg\"\n" +
             "    },\n" +
@@ -131,8 +131,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1479697\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"6244\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2015-04-12\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2015-04-12\",\n" +
             "        \"AvgPeople\": \"42\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/196613.jpg\"\n" +
             "    },\n" +
@@ -145,8 +145,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"3232877\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"6250\",\n" +
-            "        \"AvgPrice\": \"38\",\n" +
-            "        \"ReleaseTime\": \"2018-05-11\",\n" +
+            "        \"price\": \"38\",\n" +
+            "        \"year\": \"2018-05-11\",\n" +
             "        \"AvgPeople\": \"19\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/217497.jpg\"\n" +
             "    },\n" +
@@ -159,8 +159,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1321688\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"5838\",\n" +
-            "        \"AvgPrice\": \"38\",\n" +
-            "        \"ReleaseTime\": \"2018-02-16\",\n" +
+            "        \"price\": \"38\",\n" +
+            "        \"year\": \"2018-02-16\",\n" +
             "        \"AvgPeople\": \"44\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/237182.jpg\"\n" +
             "    },\n" +
@@ -173,8 +173,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2605624\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"6587\",\n" +
-            "        \"AvgPrice\": \"33\",\n" +
-            "        \"ReleaseTime\": \"2017-09-30\",\n" +
+            "        \"price\": \"33\",\n" +
+            "        \"year\": \"2017-09-30\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/246526.jpg\"\n" +
             "    },\n" +
@@ -187,8 +187,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"957225\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"4741\",\n" +
-            "        \"AvgPrice\": \"42\",\n" +
-            "        \"ReleaseTime\": \"2014-06-27\",\n" +
+            "        \"price\": \"42\",\n" +
+            "        \"year\": \"2014-06-27\",\n" +
             "        \"AvgPeople\": \"50\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/157905.jpg\"\n" +
             "    },\n" +
@@ -201,8 +201,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1932972\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"5534\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-12-29\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-12-29\",\n" +
             "        \"AvgPeople\": \"29\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/230788.jpg\"\n" +
             "    },\n" +
@@ -215,8 +215,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"3071891\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"5244\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2018-11-09\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2018-11-09\",\n" +
             "        \"AvgPeople\": \"17\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/103937.jpg\"\n" +
             "    },\n" +
@@ -229,8 +229,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1377275\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"4590\",\n" +
-            "        \"AvgPrice\": \"38\",\n" +
-            "        \"ReleaseTime\": \"2017-01-28\",\n" +
+            "        \"price\": \"38\",\n" +
+            "        \"year\": \"2017-01-28\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/217896.jpg\"\n" +
             "    },\n" +
@@ -243,8 +243,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2484474\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"4749\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2018-06-15\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2018-06-15\",\n" +
             "        \"AvgPeople\": \"19\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225759.jpg\"\n" +
             "    },\n" +
@@ -257,8 +257,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1155955\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"4647\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2015-12-18\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2015-12-18\",\n" +
             "        \"AvgPeople\": \"40\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/196282.jpg\"\n" +
             "    },\n" +
@@ -271,8 +271,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1172884\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"4229\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2017-01-28\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2017-01-28\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208325.jpg\"\n" +
             "    },\n" +
@@ -285,8 +285,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1223836\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"4912\",\n" +
-            "        \"AvgPrice\": \"33\",\n" +
-            "        \"ReleaseTime\": \"2015-09-25\",\n" +
+            "        \"price\": \"33\",\n" +
+            "        \"year\": \"2015-09-25\",\n" +
             "        \"AvgPeople\": \"40\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208076.jpg\"\n" +
             "    },\n" +
@@ -299,8 +299,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1842492\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"4199\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2017-06-23\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2017-06-23\",\n" +
             "        \"AvgPeople\": \"23\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/211901.jpg\"\n" +
             "    },\n" +
@@ -313,8 +313,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1580870\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"4548\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2016-03-04\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2016-03-04\",\n" +
             "        \"AvgPeople\": \"29\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/205222.jpg\"\n" +
             "    },\n" +
@@ -327,8 +327,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1590152\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3971\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2016-06-08\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2016-06-08\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/89952.jpg\"\n" +
             "    },\n" +
@@ -341,8 +341,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1283082\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3659\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2015-05-12\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2015-05-12\",\n" +
             "        \"AvgPeople\": \"29\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/173060.jpg\"\n" +
             "    },\n" +
@@ -355,8 +355,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1325223\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"4476\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2015-09-30\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2015-09-30\",\n" +
             "        \"AvgPeople\": \"34\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/218763.jpg\"\n" +
             "    },\n" +
@@ -369,8 +369,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1689768\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"4153\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2017-12-15\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2017-12-15\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/236404.jpg\"\n" +
             "    },\n" +
@@ -383,8 +383,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1133913\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3710\",\n" +
-            "        \"AvgPrice\": \"38\",\n" +
-            "        \"ReleaseTime\": \"2015-06-10\",\n" +
+            "        \"price\": \"38\",\n" +
+            "        \"year\": \"2015-06-10\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/191813.jpg\"\n" +
             "    },\n" +
@@ -397,8 +397,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2188490\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3836\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2018-03-30\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2018-03-30\",\n" +
             "        \"AvgPeople\": \"18\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/219107.jpg\"\n" +
             "    },\n" +
@@ -411,8 +411,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1928383\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"4015\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2018-04-28\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2018-04-28\",\n" +
             "        \"AvgPeople\": \"21\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/253823.jpg\"\n" +
             "    },\n" +
@@ -425,8 +425,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1522327\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"3892\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2018-08-10\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2018-08-10\",\n" +
             "        \"AvgPeople\": \"26\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/241018.jpg\"\n" +
             "    },\n" +
@@ -439,8 +439,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"374343\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2692\",\n" +
-            "        \"AvgPrice\": \"50\",\n" +
-            "        \"ReleaseTime\": \"2010-01-04\",\n" +
+            "        \"price\": \"50\",\n" +
+            "        \"year\": \"2010-01-04\",\n" +
             "        \"AvgPeople\": \"72\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/45997.jpg\"\n" +
             "    },\n" +
@@ -453,8 +453,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1947269\",\n" +
             "        \"typeid\": \"6\",\n" +
             "        \"AudienceCount\": \"4319\",\n" +
-            "        \"AvgPrice\": \"30\",\n" +
-            "        \"ReleaseTime\": \"2017-05-05\",\n" +
+            "        \"price\": \"30\",\n" +
+            "        \"year\": \"2017-05-05\",\n" +
             "        \"AvgPeople\": \"22\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/232932.jpg\"\n" +
             "    },\n" +
@@ -467,8 +467,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2452896\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"3580\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2018-09-30\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2018-09-30\",\n" +
             "        \"AvgPeople\": \"15\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225752.jpg\"\n" +
             "    },\n" +
@@ -481,8 +481,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"869426\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"3927\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2012-12-12\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2012-12-12\",\n" +
             "        \"AvgPeople\": \"45\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/164046.jpg\"\n" +
             "    },\n" +
@@ -495,8 +495,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"764900\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"3105\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2013-02-10\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2013-02-10\",\n" +
             "        \"AvgPeople\": \"41\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/138762.jpg\"\n" +
             "    },\n" +
@@ -509,8 +509,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1420592\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3562\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2016-05-06\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2016-05-06\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209122.jpg\"\n" +
             "    },\n" +
@@ -523,8 +523,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2273346\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3372\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2018-08-31\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2018-08-31\",\n" +
             "        \"AvgPeople\": \"15\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/226992.jpg\"\n" +
             "    },\n" +
@@ -537,8 +537,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2009973\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3590\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2017-11-24\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2017-11-24\",\n" +
             "        \"AvgPeople\": \"18\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/227434.jpg\"\n" +
             "    },\n" +
@@ -551,8 +551,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"918633\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"3275\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2016-02-08\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2016-02-08\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209180.jpg\"\n" +
             "    },\n" +
@@ -565,8 +565,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1590177\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"3897\",\n" +
-            "        \"AvgPrice\": \"30\",\n" +
-            "        \"ReleaseTime\": \"2016-09-30\",\n" +
+            "        \"price\": \"30\",\n" +
+            "        \"year\": \"2016-09-30\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/228345.jpg\"\n" +
             "    },\n" +
@@ -579,8 +579,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1502700\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3294\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-05-26\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-05-26\",\n" +
             "        \"AvgPeople\": \"22\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/151657.jpg\"\n" +
             "    },\n" +
@@ -593,8 +593,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1567733\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"3341\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2016-12-16\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2016-12-16\",\n" +
             "        \"AvgPeople\": \"21\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/153307.jpg\"\n" +
             "    },\n" +
@@ -607,8 +607,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"953002\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"3398\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2014-09-30\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2014-09-30\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/206162.jpg\"\n" +
             "    },\n" +
@@ -621,8 +621,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"907826\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"3558\",\n" +
-            "        \"AvgPrice\": \"33\",\n" +
-            "        \"ReleaseTime\": \"2015-07-17\",\n" +
+            "        \"price\": \"33\",\n" +
+            "        \"year\": \"2015-07-17\",\n" +
             "        \"AvgPeople\": \"39\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/218762.jpg\"\n" +
             "    },\n" +
@@ -635,8 +635,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1613110\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3301\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-03-24\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-03-24\",\n" +
             "        \"AvgPeople\": \"20\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/226894.jpg\"\n" +
             "    },\n" +
@@ -649,8 +649,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1374210\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3113\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-02-10\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-02-10\",\n" +
             "        \"AvgPeople\": \"23\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/125805.jpg\"\n" +
             "    },\n" +
@@ -663,8 +663,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"873433\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"3137\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2016-02-08\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2016-02-08\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/222326.jpg\"\n" +
             "    },\n" +
@@ -677,8 +677,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1565225\",\n" +
             "        \"typeid\": \"6\",\n" +
             "        \"AudienceCount\": \"3205\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-02-24\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-02-24\",\n" +
             "        \"AvgPeople\": \"20\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/194595.jpg\"\n" +
             "    },\n" +
@@ -691,8 +691,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"476536\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2564\",\n" +
-            "        \"AvgPrice\": \"42\",\n" +
-            "        \"ReleaseTime\": \"2011-07-21\",\n" +
+            "        \"price\": \"42\",\n" +
+            "        \"year\": \"2011-07-21\",\n" +
             "        \"AvgPeople\": \"54\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/105799.jpg\"\n" +
             "    },\n" +
@@ -705,8 +705,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1238225\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2737\",\n" +
-            "        \"AvgPrice\": \"38\",\n" +
-            "        \"ReleaseTime\": \"2018-08-10\",\n" +
+            "        \"price\": \"38\",\n" +
+            "        \"year\": \"2018-08-10\",\n" +
             "        \"AvgPeople\": \"22\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225827.jpg\"\n" +
             "    },\n" +
@@ -719,8 +719,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1060817\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2887\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-01-28\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-01-28\",\n" +
             "        \"AvgPeople\": \"27\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/237054.jpg\"\n" +
             "    },\n" +
@@ -733,8 +733,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"629788\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2494\",\n" +
-            "        \"AvgPrice\": \"42\",\n" +
-            "        \"ReleaseTime\": \"2014-01-31\",\n" +
+            "        \"price\": \"42\",\n" +
+            "        \"year\": \"2014-01-31\",\n" +
             "        \"AvgPeople\": \"40\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/126817.jpg\"\n" +
             "    },\n" +
@@ -747,8 +747,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1498274\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"3047\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2017-07-07\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2017-07-07\",\n" +
             "        \"AvgPeople\": \"20\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208828.jpg\"\n" +
             "    },\n" +
@@ -761,8 +761,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1260760\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2765\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2018-12-07\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2018-12-07\",\n" +
             "        \"AvgPeople\": \"22\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/132277.jpg\"\n" +
             "    },\n" +
@@ -775,8 +775,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1039630\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2851\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2016-08-05\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2016-08-05\",\n" +
             "        \"AvgPeople\": \"27\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/203656.jpg\"\n" +
             "    },\n" +
@@ -789,8 +789,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2140895\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2883\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2018-04-13\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2018-04-13\",\n" +
             "        \"AvgPeople\": \"13\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225925.jpg\"\n" +
             "    },\n" +
@@ -803,8 +803,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1135099\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2814\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2016-01-29\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2016-01-29\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/177861.jpg\"\n" +
             "    },\n" +
@@ -817,8 +817,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1211390\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2920\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2016-04-15\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2016-04-15\",\n" +
             "        \"AvgPeople\": \"24\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/207872.jpg\"\n" +
             "    },\n" +
@@ -831,8 +831,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"681311\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2485\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2015-02-19\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2015-02-19\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/212471.jpg\"\n" +
             "    },\n" +
@@ -845,8 +845,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"802959\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2759\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2015-07-10\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2015-07-10\",\n" +
             "        \"AvgPeople\": \"34\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209164.jpg\"\n" +
             "    },\n" +
@@ -859,8 +859,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"391739\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2125\",\n" +
-            "        \"AvgPrice\": \"45\",\n" +
-            "        \"ReleaseTime\": \"2012-04-10\",\n" +
+            "        \"price\": \"45\",\n" +
+            "        \"year\": \"2012-04-10\",\n" +
             "        \"AvgPeople\": \"54\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/11925.jpg\"\n" +
             "    },\n" +
@@ -873,8 +873,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"759529\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2869\",\n" +
-            "        \"AvgPrice\": \"31\",\n" +
-            "        \"ReleaseTime\": \"2015-12-24\",\n" +
+            "        \"price\": \"31\",\n" +
+            "        \"year\": \"2015-12-24\",\n" +
             "        \"AvgPeople\": \"38\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/217699.jpg\"\n" +
             "    },\n" +
@@ -887,8 +887,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"2231244\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2721\",\n" +
-            "        \"AvgPrice\": \"33\",\n" +
-            "        \"ReleaseTime\": \"2018-05-18\",\n" +
+            "        \"price\": \"33\",\n" +
+            "        \"year\": \"2018-05-18\",\n" +
             "        \"AvgPeople\": \"12\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/250729.jpg\"\n" +
             "    },\n" +
@@ -901,8 +901,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1028333\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2561\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2016-07-21\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2016-07-21\",\n" +
             "        \"AvgPeople\": \"25\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/199602.jpg\"\n" +
             "    },\n" +
@@ -915,8 +915,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"771721\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2153\",\n" +
-            "        \"AvgPrice\": \"41\",\n" +
-            "        \"ReleaseTime\": \"2014-12-23\",\n" +
+            "        \"price\": \"41\",\n" +
+            "        \"year\": \"2014-12-23\",\n" +
             "        \"AvgPeople\": \"28\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/152510.jpg\"\n" +
             "    },\n" +
@@ -929,8 +929,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"587304\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2193\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2012-12-20\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2012-12-20\",\n" +
             "        \"AvgPeople\": \"37\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/105646.jpg\"\n" +
             "    },\n" +
@@ -943,8 +943,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1016513\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2652\",\n" +
-            "        \"AvgPrice\": \"33\",\n" +
-            "        \"ReleaseTime\": \"2015-09-08\",\n" +
+            "        \"price\": \"33\",\n" +
+            "        \"year\": \"2015-09-08\",\n" +
             "        \"AvgPeople\": \"26\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/165359.jpg\"\n" +
             "    },\n" +
@@ -957,8 +957,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1512266\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2299\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2018-08-24\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2018-08-24\",\n" +
             "        \"AvgPeople\": \"15\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/228903.jpg\"\n" +
             "    },\n" +
@@ -971,8 +971,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"928527\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2217\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2016-01-09\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2016-01-09\",\n" +
             "        \"AvgPeople\": \"24\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/192895.jpg\"\n" +
             "    },\n" +
@@ -985,8 +985,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"777695\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2597\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2015-12-31\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2015-12-31\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/220627.jpg\"\n" +
             "    },\n" +
@@ -999,8 +999,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1178702\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2608\",\n" +
-            "        \"AvgPrice\": \"31\",\n" +
-            "        \"ReleaseTime\": \"2016-09-29\",\n" +
+            "        \"price\": \"31\",\n" +
+            "        \"year\": \"2016-09-29\",\n" +
             "        \"AvgPeople\": \"22\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/219178.jpg\"\n" +
             "    },\n" +
@@ -1013,8 +1013,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1000376\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2330\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2016-06-03\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2016-06-03\",\n" +
             "        \"AvgPeople\": \"23\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208116.jpg\"\n" +
             "    },\n" +
@@ -1027,8 +1027,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"965394\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2347\",\n" +
-            "        \"AvgPrice\": \"34\",\n" +
-            "        \"ReleaseTime\": \"2016-04-29\",\n" +
+            "        \"price\": \"34\",\n" +
+            "        \"year\": \"2016-04-29\",\n" +
             "        \"AvgPeople\": \"24\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/2169322.jpg\"\n" +
             "    },\n" +
@@ -1041,8 +1041,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1413463\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2201\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-09-08\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-09-08\",\n" +
             "        \"AvgPeople\": \"16\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208175.jpg\"\n" +
             "    },\n" +
@@ -1055,8 +1055,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1832335\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2226\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2018-11-16\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2018-11-16\",\n" +
             "        \"AvgPeople\": \"12\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/250056.jpg\"\n" +
             "    },\n" +
@@ -1069,8 +1069,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"863336\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"1983\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2016-03-04\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2016-03-04\",\n" +
             "        \"AvgPeople\": \"23\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/164011.jpg\"\n" +
             "    },\n" +
@@ -1083,8 +1083,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"644277\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1918\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2015-01-23\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2015-01-23\",\n" +
             "        \"AvgPeople\": \"30\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/178510.jpg\"\n" +
             "    },\n" +
@@ -1097,8 +1097,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"679475\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2130\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-01-28\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-01-28\",\n" +
             "        \"AvgPeople\": \"31\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225095.jpg\"\n" +
             "    },\n" +
@@ -1111,8 +1111,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"612815\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2089\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2014-11-12\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2014-11-12\",\n" +
             "        \"AvgPeople\": \"34\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/51119.jpg\"\n" +
             "    },\n" +
@@ -1125,8 +1125,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"539168\",\n" +
             "        \"typeid\": \"6\",\n" +
             "        \"AudienceCount\": \"1800\",\n" +
-            "        \"AvgPrice\": \"42\",\n" +
-            "        \"ReleaseTime\": \"2013-05-01\",\n" +
+            "        \"price\": \"42\",\n" +
+            "        \"year\": \"2013-05-01\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/91881.jpg\"\n" +
             "    },\n" +
@@ -1139,8 +1139,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1317649\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2399\",\n" +
-            "        \"AvgPrice\": \"31\",\n" +
-            "        \"ReleaseTime\": \"2018-01-12\",\n" +
+            "        \"price\": \"31\",\n" +
+            "        \"year\": \"2018-01-12\",\n" +
             "        \"AvgPeople\": \"18\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/154373.jpg\"\n" +
             "    },\n" +
@@ -1153,8 +1153,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1194367\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2154\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2016-11-04\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2016-11-04\",\n" +
             "        \"AvgPeople\": \"18\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/108737.jpg\"\n" +
             "    },\n" +
@@ -1167,8 +1167,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1439608\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2488\",\n" +
-            "        \"AvgPrice\": \"30\",\n" +
-            "        \"ReleaseTime\": \"2018-01-19\",\n" +
+            "        \"price\": \"30\",\n" +
+            "        \"year\": \"2018-01-19\",\n" +
             "        \"AvgPeople\": \"17\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/249736.jpg\"\n" +
             "    },\n" +
@@ -1181,8 +1181,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"482517\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"1830\",\n" +
-            "        \"AvgPrice\": \"41\",\n" +
-            "        \"ReleaseTime\": \"2015-02-19\",\n" +
+            "        \"price\": \"41\",\n" +
+            "        \"year\": \"2015-02-19\",\n" +
             "        \"AvgPeople\": \"38\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/210728.jpg\"\n" +
             "    },\n" +
@@ -1195,8 +1195,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1393471\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2094\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-11-03\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-11-03\",\n" +
             "        \"AvgPeople\": \"15\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209123.jpg\"\n" +
             "    },\n" +
@@ -1209,8 +1209,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1332963\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2115\",\n" +
-            "        \"AvgPrice\": \"35\",\n" +
-            "        \"ReleaseTime\": \"2017-09-15\",\n" +
+            "        \"price\": \"35\",\n" +
+            "        \"year\": \"2017-09-15\",\n" +
             "        \"AvgPeople\": \"16\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/218546.jpg\"\n" +
             "    },\n" +
@@ -1223,8 +1223,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1424133\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"2259\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2017-03-03\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2017-03-03\",\n" +
             "        \"AvgPeople\": \"16\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209688.jpg\"\n" +
             "    },\n" +
@@ -1237,8 +1237,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"553709\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"1830\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2018-02-16\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2018-02-16\",\n" +
             "        \"AvgPeople\": \"33\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/209205.jpg\"\n" +
             "    },\n" +
@@ -1251,8 +1251,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"824365\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1972\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2015-08-23\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2015-08-23\",\n" +
             "        \"AvgPeople\": \"24\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/106560.jpg\"\n" +
             "    },\n" +
@@ -1265,8 +1265,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"660559\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1932\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2014-05-23\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2014-05-23\",\n" +
             "        \"AvgPeople\": \"29\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/154557.jpg\"\n" +
             "    },\n" +
@@ -1279,8 +1279,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"621073\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2247\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2013-04-26\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2013-04-26\",\n" +
             "        \"AvgPeople\": \"36\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/157125.jpg\"\n" +
             "    },\n" +
@@ -1293,8 +1293,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"631971\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1831\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2014-04-04\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2014-04-04\",\n" +
             "        \"AvgPeople\": \"29\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/151951.jpg\"\n" +
             "    },\n" +
@@ -1307,8 +1307,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"666556\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"2006\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2013-12-19\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2013-12-19\",\n" +
             "        \"AvgPeople\": \"30\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/164689.jpg\"\n" +
             "    },\n" +
@@ -1321,8 +1321,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"682539\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1927\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2014-08-29\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2014-08-29\",\n" +
             "        \"AvgPeople\": \"28\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/169864.jpg\"\n" +
             "    },\n" +
@@ -1335,8 +1335,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"521788\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"1794\",\n" +
-            "        \"AvgPrice\": \"39\",\n" +
-            "        \"ReleaseTime\": \"2015-02-19\",\n" +
+            "        \"price\": \"39\",\n" +
+            "        \"year\": \"2015-02-19\",\n" +
             "        \"AvgPeople\": \"34\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/112443.jpg\"\n" +
             "    },\n" +
@@ -1349,8 +1349,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"466402\",\n" +
             "        \"typeid\": \"2\",\n" +
             "        \"AudienceCount\": \"1711\",\n" +
-            "        \"AvgPrice\": \"41\",\n" +
-            "        \"ReleaseTime\": \"2012-06-28\",\n" +
+            "        \"price\": \"41\",\n" +
+            "        \"year\": \"2012-06-28\",\n" +
             "        \"AvgPeople\": \"37\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/133147.jpg\"\n" +
             "    },\n" +
@@ -1363,8 +1363,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1042463\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"1907\",\n" +
-            "        \"AvgPrice\": \"37\",\n" +
-            "        \"ReleaseTime\": \"2016-12-23\",\n" +
+            "        \"price\": \"37\",\n" +
+            "        \"year\": \"2016-12-23\",\n" +
             "        \"AvgPeople\": \"18\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/225093.jpg\"\n" +
             "    },\n" +
@@ -1377,8 +1377,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"542739\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"2189\",\n" +
-            "        \"AvgPrice\": \"32\",\n" +
-            "        \"ReleaseTime\": \"2014-01-31\",\n" +
+            "        \"price\": \"32\",\n" +
+            "        \"year\": \"2014-01-31\",\n" +
             "        \"AvgPeople\": \"40\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/208207.jpg\"\n" +
             "    },\n" +
@@ -1391,8 +1391,8 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"1122738\",\n" +
             "        \"typeid\": \"1\",\n" +
             "        \"AudienceCount\": \"1939\",\n" +
-            "        \"AvgPrice\": \"36\",\n" +
-            "        \"ReleaseTime\": \"2017-07-13\",\n" +
+            "        \"price\": \"36\",\n" +
+            "        \"year\": \"2017-07-13\",\n" +
             "        \"AvgPeople\": \"17\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/226435.jpg\"\n" +
             "    },\n" +
@@ -1405,14 +1405,14 @@ public class ChinaTicketRankSource {
             "        \"ShowCount\": \"451641\",\n" +
             "        \"typeid\": \"5\",\n" +
             "        \"AudienceCount\": \"1721\",\n" +
-            "        \"AvgPrice\": \"40\",\n" +
-            "        \"ReleaseTime\": \"2013-07-31\",\n" +
+            "        \"price\": \"40\",\n" +
+            "        \"year\": \"2013-07-31\",\n" +
             "        \"AvgPeople\": \"38\",\n" +
             "        \"pic\": \"http://www.cbooo.cn/moviepic/146649.jpg\"\n" +
             "    }\n" +
             "]";
-    public static List<JSONObject> chinaTicketRankJSON = null;
+    public static List<JSONObject> chinaTicketTopMovieData = null;
     static {
-        chinaTicketRankJSON = JSON.parseObject(chinaTicketRankStr,List.class);
+        chinaTicketTopMovieData = JSON.parseObject(chinaTicketTopMovieDataStr,List.class);
     }
 }

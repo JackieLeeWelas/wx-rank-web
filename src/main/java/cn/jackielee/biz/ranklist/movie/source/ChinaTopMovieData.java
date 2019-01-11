@@ -11,8 +11,8 @@ import java.util.List;
  * Created by lxb on 2019/1/7.
  */
 @Data
-public class ChinaTopMovieSource {
-    public static final String chinaTopMovieStr = "[\n" +
+public class ChinaTopMovieData {
+    public static final String chinaTopMovieDataStr = "[\n" +
             "    {\n" +
             "        \"title\": \"霸王别姬 Farewell My Concubine (1993)\",\n" +
             "        \"pic\": \"http://img31.mtime.cn/mt/2014/03/12/145818.13256925_96X128.jpg\",\n" +
@@ -914,8 +914,8 @@ public class ChinaTopMovieSource {
             "        \"desc\": \"影片通过貌似边缘的极端的人物，控诉整个社会，描写了各种价值的毁灭过程。\"\n" +
             "    }\n" +
             "]";
-    public static List<JSONObject> chinaTopMoviesJSON = null;
+    public static List<JSONObject> chinaTopMovieData = null;
     static {
-        chinaTopMoviesJSON = JSON.parseObject(chinaTopMovieStr,List.class);
+        chinaTopMovieData = JSON.parseObject(chinaTopMovieDataStr,List.class);
     }
 }
