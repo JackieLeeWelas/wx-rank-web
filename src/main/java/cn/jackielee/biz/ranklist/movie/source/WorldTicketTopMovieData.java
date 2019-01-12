@@ -9,7 +9,7 @@ import java.util.List;
  * Created by lxb on 2019/1/12.
  */
 public class WorldTicketTopMovieData {
-    public static final String worldTicketTopMovieDataStr = "[\n" +
+    public static final StringBuffer worldTicketTopMovieDataStr = new StringBuffer().append("[\n" +
             "    {\n" +
             "        \"title\": \"阿凡达 Avatar\",\n" +
             "        \"pic\": \"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2180085848.jpg\",\n" +
@@ -5446,10 +5446,10 @@ public class WorldTicketTopMovieData {
             "        \"year\": \"1987\",\n" +
             "        \"ticket\": \"$300.0百万\"\n" +
             "    }\n" +
-            "]";
+            "]");
 
     public static List<JSONObject> worldTicketTopMovieData = null;
     static {
-        worldTicketTopMovieData = JSON.parseObject(worldTicketTopMovieDataStr,List.class);
+        worldTicketTopMovieData = JSON.parseObject(worldTicketTopMovieDataStr.toString(),List.class);
     }
 }

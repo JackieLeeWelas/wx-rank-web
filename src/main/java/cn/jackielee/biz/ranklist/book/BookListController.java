@@ -10,34 +10,35 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * Created by lxb on 2019/1/7.
  */
 @Slf4j
-@CrossOrigin
 @RestController
 @RequestMapping(value = "/book")
 public class BookListController extends BaseController{
     public Object execute() {return null;}
 
+    // http://localhost:8080/book/top250?start=0&limit=10
     @RequestMapping(value = "/top250")
-    public CommonRespVo<JSONObject> getTop250Book() {
+    public CommonRespVo<List<JSONObject>> getTop250Book() {
         try {
             HttpServletRequest request = this.getHttpServletRequest();
             String start = request.getParameter("start");
             String limit = request.getParameter("limit");
-            JSONObject result = this.getTop250BookListFromDoubanApi(start, limit);
+            List<JSONObject> result = this.getTop250BookListFromDoubanApi(start, limit);
             if (result != null) {
-                return new CommonRespVo(result, CommonRespVoCode.SUCCESS.code);
+                return new CommonRespVo(result, CommonRespVoCode.SUCCESS);
             }
         }catch (Exception e){
-            log.error("获取豆瓣top250书籍异常",e);
+//            log.error("获取豆瓣top250书籍异常",e);
         }
-        return new CommonRespVo(CommonRespVoCode.FAILED.code,"未获取到数据");
+        return new CommonRespVo(CommonRespVoCode.FAILED.code,"获取不到豆瓣top250书籍");
     }
 
-    private JSONObject getTop250BookListFromDoubanApi(String start, String limit){
+    private List<JSONObject> getTop250BookListFromDoubanApi(String start, String limit){
         String url = "https://api.douban.com/v2/movie/top250?start=%s&count=%s";
         String finalUrl = String.format(url,start,limit);
         return this.getInfoFromHttpApi(finalUrl);

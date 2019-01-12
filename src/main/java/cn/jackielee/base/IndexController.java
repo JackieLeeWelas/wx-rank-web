@@ -14,13 +14,13 @@ public class IndexController {
 
     @RequestMapping(value = "/",method = {RequestMethod.GET,RequestMethod.POST})
     public String start(){
-        log.info("hello JackieLee! web app is started!");
+//        log.info("hello JackieLee! web app is started!");
         return "hello JackieLee! web app is started! ";
     }
 
     @RequestMapping(value = "index",method = {RequestMethod.GET,RequestMethod.POST})
     public String index(){
-        log.info("hello JackieLee! web app is started!");
+//        log.info("hello JackieLee! web app is started!");
         return "hello JackieLee! web app is started!";
     }
 }

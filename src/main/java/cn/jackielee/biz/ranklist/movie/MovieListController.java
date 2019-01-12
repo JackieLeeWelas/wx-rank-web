@@ -22,7 +22,6 @@ import java.util.List;
  * Created by lxb on 2019/1/7.
  */
 @Slf4j
-@CrossOrigin
 @RestController
 @RequestMapping(value = "/movie")
 public class MovieListController extends BaseController {
@@ -49,7 +48,7 @@ public class MovieListController extends BaseController {
                 return new CommonRespVo(result, CommonRespVoCode.SUCCESS);
             }
         }catch (Exception e){
-            log.error("获取华语Top电影信息异常",e);
+//            log.error("获取华语Top电影信息异常",e);
         }
         return new CommonRespVo(CommonRespVoCode.FAILED.code,"未获取到数据");
     }
@@ -73,7 +72,7 @@ public class MovieListController extends BaseController {
                 return new CommonRespVo(result, CommonRespVoCode.SUCCESS);
             }
         }catch (Exception e){
-            log.error("获取国内票房榜信息异常",e);
+//            log.error("获取国内票房榜信息异常",e);
         }
         return new CommonRespVo(CommonRespVoCode.FAILED.code,"未获取到数据");
     }
@@ -97,7 +96,7 @@ public class MovieListController extends BaseController {
                 return new CommonRespVo(result, CommonRespVoCode.SUCCESS);
             }
         }catch (Exception e){
-            log.error("获取世界票房榜电影信息异常",e);
+//            log.error("获取世界票房榜电影信息异常",e);
         }
         return new CommonRespVo(CommonRespVoCode.FAILED.code,"未获取到数据");
     }
@@ -121,7 +120,7 @@ public class MovieListController extends BaseController {
                 return new CommonRespVo(result, CommonRespVoCode.SUCCESS);
             }
         }catch (Exception e){
-            log.error("获取世界票房榜电影信息异常",e);
+//            log.error("获取世界票房榜电影信息异常",e);
         }
         return new CommonRespVo(CommonRespVoCode.FAILED.code,"未获取到数据");
     }

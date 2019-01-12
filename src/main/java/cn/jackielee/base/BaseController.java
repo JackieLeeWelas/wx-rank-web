@@ -51,7 +51,7 @@ public abstract class BaseController<T> {
         return res;
     }
 
-    protected JSONObject getInfoFromHttpApi(String url){
+    protected List<JSONObject> getInfoFromHttpApi(String url){
         String result = "";
         BufferedReader in = null;
         try {
@@ -92,6 +92,6 @@ public abstract class BaseController<T> {
                 e2.printStackTrace();
             }
         }
-        return JSON.parseObject(result);
+        return JSON.parseArray(result,JSONObject.class);
     }
 }

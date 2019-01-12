@@ -1,13 +1,11 @@
 package cn.jackielee.biz.ranklist.common;
 
-import lombok.Data;
-
+import com.alibaba.fastjson.JSON;
 import java.io.Serializable;
 
 /**
  * Created by lxb on 2019/1/7.
  */
-@Data
 public class CommonRespVo<T> implements Serializable{
     /**
      * 基本错误代码
@@ -17,6 +15,30 @@ public class CommonRespVo<T> implements Serializable{
     private String msg = CommonRespVoCode.FAILED.text;
 
     private T data;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 
     public CommonRespVo() {
         code = CommonRespVoCode.FAILED.code;
@@ -42,5 +64,14 @@ public class CommonRespVo<T> implements Serializable{
         this.code = code;
         this.msg = msg;
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "CommonRespVo{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", data=" + JSON.toJSONString(data) +
+                '}';
     }
 }
