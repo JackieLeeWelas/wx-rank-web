@@ -1,8 +1,13 @@
 package cn.jackielee.base;
 
+import cn.jackielee.biz.ranklist.common.CommonRespVo;
+import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.assertj.core.util.Lists;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -51,7 +56,25 @@ public abstract class BaseController<T> {
         return res;
     }
 
-    protected List<JSONObject> getInfoFromHttpApi(String url){
+    //分页获取结果
+    protected List<JSONObject> getSubList(List<JSONObject> allList){
+        List<JSONObject> result = Lists.newArrayList();
+        HttpServletRequest request = this.getHttpServletRequest();
+        String start = request.getParameter("start");
+        String limit = request.getParameter("limit");
+        int startInt = NumberUtils.toInt(start);
+        int limitInt = NumberUtils.toInt(limit);
+        int end = startInt + limitInt;
+        if (CollectionUtils.isNotEmpty(allList) && startInt < allList.size()) {
+            if (end >= allList.size()){
+                end = allList.size();
+            }
+            result = allList.subList(startInt, end);
+        }
+        return result;
+    }
+
+    protected JSONObject getInfoFromHttpApi(String url){
         String result = "";
         BufferedReader in = null;
         try {
@@ -92,6 +115,6 @@ public abstract class BaseController<T> {
                 e2.printStackTrace();
             }
         }
-        return JSON.parseArray(result,JSONObject.class);
+        return JSON.parseObject(result);
     }
 }
