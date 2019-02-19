@@ -2,6 +2,7 @@ package cn.jackielee.biz.ranklist.movie.source;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 
@@ -489,7 +490,7 @@ public class WorldTicketTopMovieData {
             "        \"country\": \"制片国家/地区: 美国\",\n" +
             "        \"year\": \"2016\",\n" +
             "        \"ticket\": \"$966.6百万\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"title\": \"加勒比海盗3：世界的尽头PiratesoftheCaribbean: AtWorld'sEnd\",\n" +
             "        \"pic\": \"https: //img3.doubanio.com/view/photo/s_ratio_poster/public/p1076818175.jpg\",\n" +
@@ -1017,7 +1018,7 @@ public class WorldTicketTopMovieData {
             "        \"country\": \"制片国家/地区: 美国/加拿大\",\n" +
             "        \"year\": \"2016\",\n" +
             "        \"ticket\": \"$783.1百万\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"title\": \"星球大战StarWars\",\n" +
             "        \"pic\": \"https: //img3.doubanio.com/view/photo/s_ratio_poster/public/p732941361.jpg\",\n" +
@@ -1509,7 +1510,7 @@ public class WorldTicketTopMovieData {
             "        \"country\": \"制片国家/地区: 美国\",\n" +
             "        \"year\": \"2013\",\n" +
             "        \"ticket\": \"$644.6百万\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"title\": \"海洋奇缘Moana\",\n" +
             "        \"pic\": \"https: //img1.doubanio.com/view/photo/s_ratio_poster/public/p2397960879.jpg\",\n" +
@@ -2013,7 +2014,7 @@ public class WorldTicketTopMovieData {
             "        \"country\": \"制片国家/地区: 美国/德国\",\n" +
             "        \"year\": \"2000\",\n" +
             "        \"ticket\": \"$546.4百万\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"title\": \"大侦探福尔摩斯2：诡影游戏SherlockHolmes: AGameofShadows\",\n" +
             "        \"pic\": \"https: //img3.doubanio.com/view/photo/s_ratio_poster/public/p1327387815.jpg\",\n" +
@@ -2505,7 +2506,7 @@ public class WorldTicketTopMovieData {
             "        \"country\": \"制片国家/地区: 美国\",\n" +
             "        \"year\": \"2011\",\n" +
             "        \"ticket\": \"$481.8百万\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"title\": \"史密斯夫妇Mr.&Mrs.Smith\",\n" +
             "        \"pic\": \"https: //img3.doubanio.com/view/photo/s_ratio_poster/public/p1677402144.jpg\",\n" +

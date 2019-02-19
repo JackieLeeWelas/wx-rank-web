@@ -9,7 +9,7 @@ import java.util.List;
  * Created by lxb on 2019/1/12.
  */
 public class BookTop250Data {
-    public static final StringBuilder bookTop250DataStr = new StringBuilder("[\n" +
+    public static final StringBuffer bookTop250DataStr = new StringBuffer().append("[\n" +
             "    {\n" +
             "        \"author\": \"[美] 卡勒德·胡赛尼\",\n" +
             "        \"pic\": \"https://img3.doubanio.com/view/subject/m/public/s1727290.jpg\",\n" +
@@ -1017,7 +1017,7 @@ public class BookTop250Data {
             "        \"scoreNum\": \"44805人评价\",\n" +
             "        \"title\": \"无人生还\",\n" +
             "        \"translator\": \"祁阿红\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"author\": \"菲茨杰拉德\",\n" +
             "        \"pic\": \"https://img3.doubanio.com/view/subject/m/public/s1005875.jpg\",\n" +
@@ -2097,7 +2097,7 @@ public class BookTop250Data {
             "        \"scoreNum\": \"26532人评价\",\n" +
             "        \"title\": \"国境以南 太阳以西\",\n" +
             "        \"translator\": \"林少华\"\n" +
-            "    },\n" +
+            "    },\n").append(
             "    {\n" +
             "        \"author\": \"[美]  凯利·麦格尼格尔\",\n" +
             "        \"pic\": \"https://img3.doubanio.com/view/subject/m/public/s10685385.jpg\",\n" +

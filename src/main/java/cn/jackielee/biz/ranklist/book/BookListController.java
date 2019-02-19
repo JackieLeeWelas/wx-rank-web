@@ -4,18 +4,13 @@ import cn.jackielee.base.BaseController;
 import cn.jackielee.biz.ranklist.book.source.BookTop250Data;
 import cn.jackielee.biz.ranklist.common.CommonRespVo;
 import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
-import cn.jackielee.biz.ranklist.game.GameListController;
-import cn.jackielee.biz.ranklist.movie.source.DCMovieData;
 import com.alibaba.fastjson.JSONObject;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**

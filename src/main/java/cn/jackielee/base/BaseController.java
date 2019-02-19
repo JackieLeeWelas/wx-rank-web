@@ -1,13 +1,12 @@
 package cn.jackielee.base;
 
-import cn.jackielee.biz.ranklist.common.CommonRespVo;
-import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.assertj.core.util.Lists;
+import org.slf4j.Logger;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -26,6 +25,7 @@ import java.util.Map;
  * Created by lxb on 2019/1/7.
  */
 public abstract class BaseController<T> {
+    private static final Logger log = org.slf4j.LoggerFactory.getLogger(BaseController.class);
 
     public abstract T execute();
 
@@ -90,10 +90,6 @@ public abstract class BaseController<T> {
             connection.connect();
             // 获取所有响应头字段
             Map<String, List<String>> map = connection.getHeaderFields();
-            // 遍历所有的响应头字段
-            for (String key : map.keySet()) {
-                System.out.println(key + "--->" + map.get(key));
-            }
             // 定义 BufferedReader输入流来读取URL的响应
             in = new BufferedReader(new InputStreamReader(
                     connection.getInputStream()));
@@ -102,8 +98,7 @@ public abstract class BaseController<T> {
                 result += line;
             }
         } catch (Exception e) {
-            System.out.println("发送GET请求出现异常！" + e);
-            e.printStackTrace();
+            log.error("发送GET请求出现异常", e);
         }
         // 使用finally块来关闭输入流
         finally {
@@ -111,8 +106,8 @@ public abstract class BaseController<T> {
                 if (in != null) {
                     in.close();
                 }
-            } catch (Exception e2) {
-                e2.printStackTrace();
+            } catch (Exception e) {
+                log.error("关闭输入流出现异常", e);
             }
         }
         return JSON.parseObject(result);
