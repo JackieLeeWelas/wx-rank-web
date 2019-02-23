@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
@@ -69,7 +70,14 @@ public abstract class BaseController<T> {
             if (end >= allList.size()){
                 end = allList.size();
             }
-            result = allList.subList(startInt, end);
+            result = Lists.newArrayList(allList.subList(startInt, end));
+        }
+        if (CollectionUtils.isNotEmpty(result)){
+            for (JSONObject jo : result){
+                if (jo.get("id") == null){
+                    jo.put("id",0);
+                }
+            }
         }
         return result;
     }
