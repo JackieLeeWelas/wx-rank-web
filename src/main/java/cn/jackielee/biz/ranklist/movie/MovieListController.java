@@ -4,7 +4,7 @@ import cn.jackielee.base.MovieBaseController;
 import cn.jackielee.biz.ranklist.common.utils.HttpUtil;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
-import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
+import cn.jackielee.biz.ranklist.common.vo.ListCommonVo;
 import cn.jackielee.biz.ranklist.movie.source.ChinaTicketTopMovieData;
 import cn.jackielee.biz.ranklist.movie.source.ChinaTopMovieData;
 import cn.jackielee.biz.ranklist.movie.source.DCMovieData;
@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
+ * 电影列表页
  * Created by lxb on 2019/1/7.
  */
 @RestController
@@ -114,17 +115,17 @@ public class MovieListController extends MovieBaseController {
      * @return
      */
     @RequestMapping(value = "/top250")
-    public CommonRespVo<List<DetailCommonVo>> getMovieTop250() {
+    public CommonRespVo<List<ListCommonVo>> getMovieTop250() {
         try {
             HttpServletRequest request = this.getHttpServletRequest();
             String start = request.getParameter("start");
             String limit = request.getParameter("limit");
             String url = String.format("https://api.douban.com/v2/movie/top250?start=%s&count=%s",start,limit);
             JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
-            List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
+            List<ListCommonVo> listCommonVos = this.movieListDataTrans(jsonObject);
 
-            if (CollectionUtils.isNotEmpty(detailCommonVos)) {
-                return new CommonRespVo(detailCommonVos, CommonRespVoCode.SUCCESS);
+            if (CollectionUtils.isNotEmpty(listCommonVos)) {
+                return new CommonRespVo(listCommonVos, CommonRespVoCode.SUCCESS);
             }
         } catch (Exception e) {
             log.error("获取豆瓣top250电影信息异常",e);
@@ -139,17 +140,17 @@ public class MovieListController extends MovieBaseController {
      * @return
      */
     @RequestMapping(value = "/inTheaters")
-    public CommonRespVo<List<DetailCommonVo>> getMovieInTheaters() {
+    public CommonRespVo<List<ListCommonVo>> getMovieInTheaters() {
         try {
             HttpServletRequest request = this.getHttpServletRequest();
             String start = request.getParameter("start");
             String limit = request.getParameter("limit");
-            String url = String.format("https://api.douban.com/v2/movie/coming_soon?start=0&count=1",start,limit);
+            String url = String.format("https://api.douban.com/v2/movie/in_theaters?start=%s&count=%s",start,limit);
             JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
-            List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
+            List<ListCommonVo> listCommonVos = this.movieListDataTrans(jsonObject);
 
-            if (CollectionUtils.isNotEmpty(detailCommonVos)) {
-                return new CommonRespVo(detailCommonVos, CommonRespVoCode.SUCCESS);
+            if (CollectionUtils.isNotEmpty(listCommonVos)) {
+                return new CommonRespVo(listCommonVos, CommonRespVoCode.SUCCESS);
             }
         } catch (Exception e) {
             log.error("获取豆瓣正在热映电影信息异常",e);
@@ -164,17 +165,17 @@ public class MovieListController extends MovieBaseController {
      * @return
      */
     @RequestMapping(value = "/comingSoon")
-    public CommonRespVo<List<DetailCommonVo>> getMovieComingSoon() {
+    public CommonRespVo<List<ListCommonVo>> getMovieComingSoon() {
         try {
             HttpServletRequest request = this.getHttpServletRequest();
             String start = request.getParameter("start");
             String limit = request.getParameter("limit");
             String url = String.format("https://api.douban.com/v2/movie/coming_soon?start=%s&count=%s",start,limit);
             JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
-            List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
+            List<ListCommonVo> listCommonVos = this.movieListDataTrans(jsonObject);
 
-            if (CollectionUtils.isNotEmpty(detailCommonVos)) {
-                return new CommonRespVo(detailCommonVos, CommonRespVoCode.SUCCESS);
+            if (CollectionUtils.isNotEmpty(listCommonVos)) {
+                return new CommonRespVo(listCommonVos, CommonRespVoCode.SUCCESS);
             }
         } catch (Exception e) {
             log.error("获取豆瓣即将上映电影信息异常",e);

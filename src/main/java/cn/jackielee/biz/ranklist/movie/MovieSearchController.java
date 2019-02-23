@@ -4,7 +4,7 @@ import cn.jackielee.base.MovieBaseController;
 import cn.jackielee.biz.ranklist.common.utils.HttpUtil;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
-import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
+import cn.jackielee.biz.ranklist.common.vo.ListCommonVo;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -30,7 +30,7 @@ public class MovieSearchController extends MovieBaseController {
      * @return
      */
     @RequestMapping(value = "/search")
-    public CommonRespVo<List<DetailCommonVo>> execute() {
+    public CommonRespVo<List<ListCommonVo>> execute() {
         try {
             HttpServletRequest request = this.getHttpServletRequest();
             String keyWord = request.getParameter("keyWord");
@@ -38,7 +38,7 @@ public class MovieSearchController extends MovieBaseController {
             String limit = request.getParameter("limit");
             String type = request.getParameter("type");
 
-            List<DetailCommonVo> searchResult = this.searchMovie(keyWord, start, limit, type);
+            List<ListCommonVo> searchResult = this.searchMovie(keyWord, start, limit, type);
             if (CollectionUtils.isNotEmpty(searchResult)) {
                 return new CommonRespVo(searchResult, CommonRespVoCode.SUCCESS);
             }
@@ -56,7 +56,7 @@ public class MovieSearchController extends MovieBaseController {
      * @param type
      * @return
      */
-    private List<DetailCommonVo> searchMovie(String keyWord, String start, String limit,String type){
+    private List<ListCommonVo> searchMovie(String keyWord, String start, String limit, String type){
         try {
             keyWord = URLEncoder.encode(keyWord,"UTF-8");
         } catch (Exception e) {
@@ -68,7 +68,7 @@ public class MovieSearchController extends MovieBaseController {
         }
 
         JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
-        List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
-        return detailCommonVos;
+        List<ListCommonVo> listCommonVos = this.movieListDataTrans(jsonObject);
+        return listCommonVos;
     }
 }
