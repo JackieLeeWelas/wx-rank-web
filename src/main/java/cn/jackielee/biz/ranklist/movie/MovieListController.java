@@ -131,4 +131,54 @@ public class MovieListController extends MovieBaseController {
         }
         return new CommonRespVo(CommonRespVoCode.FAILED.code, "未获取到数据");
     }
+
+    /**
+     * 豆瓣正在热映的电影
+     * test: http://localhost:8080/movie/inTheaters?start=0&limit=10
+     *
+     * @return
+     */
+    @RequestMapping(value = "/inTheaters")
+    public CommonRespVo<List<DetailCommonVo>> getMovieInTheaters() {
+        try {
+            HttpServletRequest request = this.getHttpServletRequest();
+            String start = request.getParameter("start");
+            String limit = request.getParameter("limit");
+            String url = String.format("https://api.douban.com/v2/movie/coming_soon?start=0&count=1",start,limit);
+            JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
+            List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
+
+            if (CollectionUtils.isNotEmpty(detailCommonVos)) {
+                return new CommonRespVo(detailCommonVos, CommonRespVoCode.SUCCESS);
+            }
+        } catch (Exception e) {
+            log.error("获取豆瓣正在热映电影信息异常",e);
+        }
+        return new CommonRespVo(CommonRespVoCode.FAILED.code, "未获取到数据");
+    }
+
+    /**
+     * 豆瓣即将上映的电影
+     * test: http://localhost:8080/movie/comingSoon?start=0&limit=10
+     *
+     * @return
+     */
+    @RequestMapping(value = "/comingSoon")
+    public CommonRespVo<List<DetailCommonVo>> getMovieComingSoon() {
+        try {
+            HttpServletRequest request = this.getHttpServletRequest();
+            String start = request.getParameter("start");
+            String limit = request.getParameter("limit");
+            String url = String.format("https://api.douban.com/v2/movie/coming_soon?start=%s&count=%s",start,limit);
+            JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
+            List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
+
+            if (CollectionUtils.isNotEmpty(detailCommonVos)) {
+                return new CommonRespVo(detailCommonVos, CommonRespVoCode.SUCCESS);
+            }
+        } catch (Exception e) {
+            log.error("获取豆瓣即将上映电影信息异常",e);
+        }
+        return new CommonRespVo(CommonRespVoCode.FAILED.code, "未获取到数据");
+    }
 }
