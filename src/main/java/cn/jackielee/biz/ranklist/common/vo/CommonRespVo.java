@@ -1,4 +1,4 @@
-package cn.jackielee.biz.ranklist.common;
+package cn.jackielee.biz.ranklist.common.vo;
 
 import com.alibaba.fastjson.JSON;
 import java.io.Serializable;

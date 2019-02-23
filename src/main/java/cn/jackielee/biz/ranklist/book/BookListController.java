@@ -2,8 +2,8 @@ package cn.jackielee.biz.ranklist.book;
 
 import cn.jackielee.base.BaseController;
 import cn.jackielee.biz.ranklist.book.source.BookTop250Data;
-import cn.jackielee.biz.ranklist.common.CommonRespVo;
-import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections4.CollectionUtils;
 import org.assertj.core.util.Lists;

@@ -1,6 +1,6 @@
 package cn.jackielee.base;
 
-import cn.jackielee.biz.ranklist.common.DetailCommonVo;
+import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections4.CollectionUtils;
@@ -26,6 +26,8 @@ public abstract class MovieBaseController extends BaseController{
             List<JSONObject> jsonObjects = jsonArray.toJavaList(JSONObject.class);
             for (JSONObject jo : jsonObjects) {
                 DetailCommonVo vo = new DetailCommonVo();
+                //id
+                vo.setId(jo.getIntValue("id"));
                 //标题
                 vo.setTitle(jo.getString("title"));
                 //图片

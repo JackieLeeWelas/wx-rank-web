@@ -1,8 +1,8 @@
 package cn.jackielee.biz.ranklist.game;
 
 import cn.jackielee.base.BaseController;
-import cn.jackielee.biz.ranklist.common.CommonRespVo;
-import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
 import cn.jackielee.biz.ranklist.game.source.AndroidTopGameData;
 import cn.jackielee.biz.ranklist.game.source.ClientTopGameData;
 import cn.jackielee.biz.ranklist.game.source.IOSTopGameData;

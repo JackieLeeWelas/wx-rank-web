@@ -1,27 +1,22 @@
 package cn.jackielee.biz.ranklist.movie;
 
-import cn.jackielee.base.BaseController;
 import cn.jackielee.base.MovieBaseController;
-import cn.jackielee.biz.ranklist.book.BookListController;
-import cn.jackielee.biz.ranklist.common.CommonRespVo;
-import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
-import cn.jackielee.biz.ranklist.common.DetailCommonVo;
+import cn.jackielee.biz.ranklist.common.utils.HttpUtil;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
+import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
 import cn.jackielee.biz.ranklist.movie.source.ChinaTicketTopMovieData;
 import cn.jackielee.biz.ranklist.movie.source.ChinaTopMovieData;
 import cn.jackielee.biz.ranklist.movie.source.DCMovieData;
 import cn.jackielee.biz.ranklist.movie.source.WorldTicketTopMovieData;
 import com.alibaba.fastjson.JSONObject;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.math.NumberUtils;
 import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -125,7 +120,7 @@ public class MovieListController extends MovieBaseController {
             String start = request.getParameter("start");
             String limit = request.getParameter("limit");
             String url = String.format("https://api.douban.com/v2/movie/top250?start=%s&count=%s",start,limit);
-            JSONObject jsonObject = this.getInfoFromHttpApi(url);
+            JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
             List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
 
             if (CollectionUtils.isNotEmpty(detailCommonVos)) {

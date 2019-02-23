@@ -1,9 +1,10 @@
 package cn.jackielee.biz.ranklist.movie;
 
 import cn.jackielee.base.MovieBaseController;
-import cn.jackielee.biz.ranklist.common.CommonRespVo;
-import cn.jackielee.biz.ranklist.common.CommonRespVoCode;
-import cn.jackielee.biz.ranklist.common.DetailCommonVo;
+import cn.jackielee.biz.ranklist.common.utils.HttpUtil;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
+import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
+import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -66,7 +67,7 @@ public class MovieSearchController extends MovieBaseController {
             url = String.format("http://api.douban.com/v2/movie/search?tag=%s&start=%s&count=%s",keyWord,start,limit);
         }
 
-        JSONObject jsonObject = this.getInfoFromHttpApi(url);
+        JSONObject jsonObject = HttpUtil.getInfoFromHttpApi(url);
         List<DetailCommonVo> detailCommonVos = this.movieSearchDataTrans(jsonObject);
         return detailCommonVos;
     }

@@ -1,4 +1,4 @@
-package cn.jackielee.biz.ranklist.common;
+package cn.jackielee.biz.ranklist.common.vo;
 
 /**
  * Created by lxb on 2019/1/7.
