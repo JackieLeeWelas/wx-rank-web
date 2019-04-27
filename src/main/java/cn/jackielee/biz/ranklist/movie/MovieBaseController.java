@@ -1,5 +1,6 @@
-package cn.jackielee.base;
+package cn.jackielee.biz.ranklist.movie;
 
+import cn.jackielee.base.BaseController;
 import cn.jackielee.biz.ranklist.common.vo.DetailCommonVo;
 import cn.jackielee.biz.ranklist.common.vo.ListCommonVo;
 import com.alibaba.fastjson.JSONArray;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Created by lxb on 2019/1/12.
  */
-public abstract class MovieBaseController extends BaseController{
+public abstract class MovieBaseController extends BaseController {
 
     /**
      * 从豆瓣接口返回的电影列表数据解析转换

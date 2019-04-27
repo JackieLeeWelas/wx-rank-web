@@ -1,6 +1,5 @@
 package cn.jackielee.biz.ranklist.movie;
 
-import cn.jackielee.base.MovieBaseController;
 import cn.jackielee.biz.ranklist.common.utils.HttpUtil;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;

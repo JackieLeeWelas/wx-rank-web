@@ -1,6 +1,5 @@
 package cn.jackielee.biz.ranklist.music;
 
-import cn.jackielee.base.BaseController;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVo;
 import cn.jackielee.biz.ranklist.common.vo.CommonRespVoCode;
 import cn.jackielee.biz.ranklist.music.source.DouYinTopMusicData;
@@ -21,7 +20,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "/music")
-public class MusicListController extends BaseController {
+public class MusicListController extends MusicBaseController {
     private static final Logger log = org.slf4j.LoggerFactory.getLogger(MusicListController.class);
 
     public Object execute() {
